@@ -1,0 +1,50 @@
+[
+  {
+    "name": "nacosvi",
+    "img": "/Images/Porto/nacosvi.webp",
+    "description": "Website for information of 6th NATIONAL CONFERENCE FOR COMMUNITY SERVICE.",
+    "tech": "php, bootstrap, js",
+    "github": "https://github.com/RissAgung/nacosvi",
+    "url": "https://conference.polije.ac.id/nacosvi/2023/"
+  },
+  {
+    "name": "edusip",
+    "img": "/Images/Porto/edusip.webp",
+    "description": "The Edusip Polije hotel room booking website is accompanied by room management.",
+    "tech": "laravel, mySql, bootstrap, js",
+    "github": "https://github.com/aryafathorozi/polije_hotel",
+    "url": "http://edusip-polije.wdmif.id/"
+  },
+  {
+    "name": "simi",
+    "img": "/Images/Porto/simi.webp",
+    "description": "Market Intelligence application with the main features of questionnaires and text mining for company decision making",
+    "tech": "laravel, mySql, bootstrap, js",
+    "github": "https://github.com/arieeefajar/pt_bca",
+    "url": "https://simiv2.wdmif.id/"
+  },
+  {
+    "name": "tijara store",
+    "img": "/Images/Porto/tijara.webp",
+    "description": "Website and mobile based Point of Sales application for Tijara boutique in Banyuwangi.",
+    "tech": "laravel, mySql, tailwindCss",
+    "github": "https://github.com/RissAgung/tijaraStore",
+    "url": "https://tijara.mphstar.my.id/"
+  },
+  {
+    "name": "wg optical",
+    "img": "/Images/Porto/wgoptical.webp",
+    "description": "ERP system for optics with a home service system equipped with transaction, inventory, finance, personnel and distribution modules.",
+    "tech": "php, mySql, tailwindCss",
+    "github": "https://github.com/RissAgung/wg_optical",
+    "url": "https://wgoptical.mphstar.my.id/views/index.php"
+  },
+  {
+    "name": "SI gandrung",
+    "img": "/Images/Porto/sigandrung.webp",
+    "description": "Aplication desktop-based Mie Gandrung restaurant Point of Sale system.",
+    "tech": "java, mySql",
+    "github": "https://github.com/mphstar/sigandrung.git",
+    "url": ""
+  }
+]

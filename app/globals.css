@@ -1,27 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* width */
+::-webkit-scrollbar {
+  @apply w-2;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-primary;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-tertiary rounded-full duration-300;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply font-monts;
+}
+
+section > div:first-child {
+  @apply p-5 md:p-10;
+}
+
+h1 {
+  @apply font-extrabold text-5xl md:text-7xl;
+}
+
+h2 {
+  @apply font-extrabold text-4xl md:text-5xl;
+}
+
+h3 {
+  @apply font-bold text-xl;
+}
+
+p {
+  @apply font-semibold text-xs md:text-base;
 }
