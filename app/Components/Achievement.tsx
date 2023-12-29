@@ -20,7 +20,7 @@ const Achievement = () => {
   });
 
   return (
-    <Container>
+    <Container id="achievement">
       <div className="w-full min-h-screen flex flex-col">
         <TittleSection reverse={true}>achievement</TittleSection>
         <div className="w-full h-fit grid grid-cols-1 mt-8 gap-7">{datas}</div>
@@ -48,11 +48,11 @@ const Card = ({ options: { name, date, publisher, img, tech } }: PropsCard) => {
   return (
     <div
       data-aos-duration="700"
-      data-aos="fade-up"
+      data-aos="zoom-in"
       className="w-full h-fit group flex justify-center"
     >
       <div className="w-[90%] md:w-full flex flex-col md:flex-row md:justify-center gap-4 md:gap-6">
-        <div className="w-full md:max-w-[300px] h-fit p-4 rounded-md bg-primary2 overflow-hidden">
+        <div className="w-full md:max-w-[280px] h-fit p-4 rounded-md dark:bg-primary2 bg-secondary2 duration-700 overflow-hidden">
           <Image
             priority={false}
             src={img}
@@ -63,15 +63,21 @@ const Card = ({ options: { name, date, publisher, img, tech } }: PropsCard) => {
           />
         </div>
 
-        <div className="w-full md:w-fit h-fit flex flex-col gap-3 text-secondary max-md:px-4">
+        <div className="w-full md:w-fit h-fit flex flex-col gap-3 max-md:px-4">
           <div className="flex gap-3 items-end">
-            <p className="font-bold text-baseleading-none">{date}</p>
+            <p className="font-bold text-baseleading-none dark:text-secondary text-primary duration-700">
+              {date}
+            </p>
             <div className="flex-1 h-[1px] bg-secondary2 md:hidden"></div>
           </div>
 
-          <h3 className="font-extrabold">{name}</h3>
+          <h3 className="font-extrabold break-words dark:text-secondary text-primary duration-700">
+            {name}
+          </h3>
 
-          <p className="font-normal">{publisher}</p>
+          <p className="font-normal break-words dark:text-secondary text-primary duration-700">
+            {publisher}
+          </p>
 
           <div className="flex flex-wrap gap-2 w-full">{tech_data}</div>
         </div>

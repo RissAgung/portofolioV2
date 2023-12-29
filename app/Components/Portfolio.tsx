@@ -22,7 +22,7 @@ const Portfolio = () => {
   });
 
   return (
-    <Container>
+    <Container id="portfolio">
       <div className="w-full min-h-screen flex flex-col">
         <TittleSection>portfolio</TittleSection>
         <div className="w-full h-fit grid grid-cols-1 md:grid-cols-2 mt-8 gap-7">
@@ -52,9 +52,9 @@ const Card = ({
       data-aos="zoom-in"
       className="flex flex-col gap-2 w-full h-fit group"
     >
-      <div className="w-full aspect-video overflow-hidden rounded-md bg-primary2 p-4">
+      <div className="w-full aspect-video overflow-hidden rounded-md dark:bg-primary2 bg-secondary2 duration-700 p-4">
         <Image
-          priority={false}
+          priority
           src={imgSrc}
           alt="porto"
           width={300}
@@ -65,9 +65,11 @@ const Card = ({
 
       <div className="w-full h-fit flex flex-col gap-1 px-2">
         <div className="w-full h-fit flex items-center gap-3">
-          <h3 className="uppercase font-extrabold text-secondary">{title}</h3>
+          <h3 className="uppercase font-extrabold dark:text-secondary text-primary duration-700 max-w-[50%] break-words">
+            {title}
+          </h3>
 
-          <div className="flex-1 h-[2px] md:h-[3px] bg-secondary2"></div>
+          <div className="flex-1 h-[2px] md:h-[3px] dark:bg-secondary2 bg-primary2 duration-700"></div>
 
           <div className="flex gap-2">
             {github != "" && (
@@ -78,7 +80,7 @@ const Card = ({
                 className="w-full"
               >
                 <svg
-                  className="w-5 aspect-square fill-secondary"
+                  className="w-5 md:w-6 aspect-square dark:fill-secondary fill-primary duration-700"
                   viewBox="0 0 31 30"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -95,7 +97,7 @@ const Card = ({
                 className="w-full"
               >
                 <svg
-                  className="w-5 aspect-square fill-secondary stroke-secondary"
+                  className="w-5 md:w-6 aspect-square dark:fill-secondary fill-primary dark:stroke-secondary stroke-primary duration-700"
                   viewBox="0 0 31 31"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -112,14 +114,16 @@ const Card = ({
 
         {/* tech */}
         <div className="w-full max-w-full">
-          <p className="font-semibold text-tertiary text-base capitalize">
+          <p className="dark:font-semibold font-bold dark:text-tertiary text-[#90573B] duration-700 text-base capitalize break-words">
             {tech}
           </p>
         </div>
 
         {/* descriptions */}
         <div className="w-full max-w-full">
-          <p className="text-secondary2 font-medium text-sm">{description}</p>
+          <p className="dark:text-secondary2 text-primary2 duration-700 font-medium text-sm break-words">
+            {description}
+          </p>
         </div>
       </div>
     </div>

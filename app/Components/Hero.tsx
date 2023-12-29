@@ -2,24 +2,25 @@
 
 import Image from "next/image";
 import Container from "./Container";
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <Container>
+    <Container id="home">
       <div className="w-full min-h-screen relative flex flex-col md:flex-row-reverse gap-3 justify-center md:justify-start md:items-center max-md:bg-profile max-md:bg-cover">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary md:hidden"></div>
 
         <div
           data-aos-duration="700"
           data-aos="fade-left"
-          className="max-md:hidden w-full h-full md:max-w-[399px] md:max-h-[594px] md:rounded-[60px] absolute md:relative max-md:inset-0 z-0 overflow-hidden"
+          className="max-md:hidden w-full h-full md:max-w-[340px] md:max-h-[500px] md:rounded-[60px] max-md:absolute max-md:inset-0 z-0 overflow-hidden"
         >
           <Image
             priority={false}
-            src={"/Images/profile.webp"}
+            src={"/Images/profile.png"}
             alt="profile"
-            width={500}
-            height={500}
+            width={300}
+            height={300}
             className="w-full h-full object-cover"
           />
         </div>
@@ -29,18 +30,25 @@ const Hero = () => {
           data-aos="fade-right"
           className="relative md:absolute md:left-0 md:pl-10 z-10 flex flex-col w-full h-full gap-3 justify-center"
         >
-          <div className="flex flex-col gap-3 text-secondary">
-            <h1 className="uppercase leading-10 md:leading-[60px]">
+          <div className="flex flex-col gap-3 text-secondary md:dark:text-secondary md:text-primary duration-700">
+            <h1 className="uppercase leading-10 md:leading-[53px]">
               hello <br /> everyone
             </h1>
-            <p className="leading-4 md:leading-5 w-[75%] md:w-[45%] text-secondary2">
-              My name is Risqi Agung Dwi Prasetyo, I am a web developer, UI UX
-              designer, MySQL developer and I study at Jember State Polytechnic
-            </p>
+            <div className="font-semibold text-xs md:text-sm leading-4 md:leading-5 w-[75%] md:w-[50%] text-secondary2 md:dark:text-secondary2 md:text-primary2 duration-700">
+              <Typewriter
+                options={{
+                  strings: [
+                    "My name is Risqi Agung Dwi Prasetyo, I am a web developer, UI UX designer, MySQL developer and I study at Jember State Polytechnic",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </div>
           </div>
 
           <button type="button" className="flex items-center w-fit gap-3">
-            <p className="font-bold text-base md:text-xl text-secondary">
+            <p className="font-bold text-base md:text-lg text-secondary md:dark:text-secondary md:text-primary duration-700">
               Let&lsquo;s start
             </p>
             <div className="w-6 md:w-8 aspect-square rounded-full bg-[#90573B] overflow-hidden flex items-center justify-center">

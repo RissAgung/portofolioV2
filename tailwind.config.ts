@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,7 +17,7 @@ const config: Config = {
         tertiary: "#CFA18C",
       },
       backgroundImage: {
-        profile: "url('/Images/profile.webp')",
+        profile: "url('/Images/profile.png')",
       },
     },
     fontFamily: {

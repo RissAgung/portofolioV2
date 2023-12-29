@@ -1,7 +1,7 @@
 [
   {
     "name": "nacosvi",
-    "img": "/Images/Porto/nacosvi.webp",
+    "img": "/Images/Porto/nacosvi.png",
     "description": "Website for information of 6th NATIONAL CONFERENCE FOR COMMUNITY SERVICE.",
     "tech": "php, bootstrap, js",
     "github": "https://github.com/RissAgung/nacosvi",
@@ -9,7 +9,7 @@
   },
   {
     "name": "edusip",
-    "img": "/Images/Porto/edusip.webp",
+    "img": "/Images/Porto/edusip.png",
     "description": "The Edusip Polije hotel room booking website is accompanied by room management.",
     "tech": "laravel, mySql, bootstrap, js",
     "github": "https://github.com/aryafathorozi/polije_hotel",
@@ -17,7 +17,7 @@
   },
   {
     "name": "simi",
-    "img": "/Images/Porto/simi.webp",
+    "img": "/Images/Porto/simi.png",
     "description": "Market Intelligence application with the main features of questionnaires and text mining for company decision making",
     "tech": "laravel, mySql, bootstrap, js",
     "github": "https://github.com/arieeefajar/pt_bca",
@@ -25,7 +25,7 @@
   },
   {
     "name": "tijara store",
-    "img": "/Images/Porto/tijara.webp",
+    "img": "/Images/Porto/tijara.png",
     "description": "Website and mobile based Point of Sales application for Tijara boutique in Banyuwangi.",
     "tech": "laravel, mySql, tailwindCss",
     "github": "https://github.com/RissAgung/tijaraStore",
@@ -33,7 +33,7 @@
   },
   {
     "name": "wg optical",
-    "img": "/Images/Porto/wgoptical.webp",
+    "img": "/Images/Porto/wgoptical.png",
     "description": "ERP system for optics with a home service system equipped with transaction, inventory, finance, personnel and distribution modules.",
     "tech": "php, mySql, tailwindCss",
     "github": "https://github.com/RissAgung/wg_optical",
@@ -41,7 +41,7 @@
   },
   {
     "name": "SI gandrung",
-    "img": "/Images/Porto/sigandrung.webp",
+    "img": "/Images/Porto/sigandrung.png",
     "description": "Aplication desktop-based Mie Gandrung restaurant Point of Sale system.",
     "tech": "java, mySql",
     "github": "https://github.com/mphstar/sigandrung.git",

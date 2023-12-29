@@ -2,11 +2,15 @@ import { ReactNode } from "react";
 
 interface props {
   children: ReactNode;
+  id?: string;
 }
 
-const Container = ({ children }: props) => {
+const Container = ({ children, id }: props) => {
   return (
-    <section className="container bg-primary w-full max-w-4xl mb-10">
+    <section
+      id={id}
+      className="container dark:bg-primary bg-secondary duration-700 w-full max-w-4xl mb-10 container-section"
+    >
       {children}
     </section>
   );

@@ -4,17 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* width */
 ::-webkit-scrollbar {
   @apply w-2;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  @apply bg-primary;
+  @apply bg-transparent;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   @apply bg-tertiary rounded-full duration-300;
 }
@@ -23,12 +20,12 @@ body {
   @apply font-monts;
 }
 
-section > div:first-child {
+.container-section > div:first-child {
   @apply p-5 md:p-10;
 }
 
 h1 {
-  @apply font-extrabold text-5xl md:text-7xl;
+  @apply font-extrabold text-5xl md:text-6xl;
 }
 
 h2 {
@@ -40,5 +37,5 @@ h3 {
 }
 
 p {
-  @apply font-semibold text-xs md:text-base;
+  @apply font-semibold text-xs md:text-sm;
 }
